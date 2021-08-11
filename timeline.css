@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fad0ba;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid > div{
+    grid-template-columns: 9fr 1fr 9fr;
+    display: grid;
+    grid-column: span 3;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.kotak{
+    width: 90%;
+    height: 85%;
+    background-color: #D6A704;
+    border-radius: 60px;
+    position: relative;
+}
+
+.lingkaranbesarkiri{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #C92E3E;
+    border-radius: 50%;
+    right: 160%;
+    top: 35%;
+}
+
+.lingkaranbesarkanan{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #C92E3E;
+    border-radius: 50%;
+    left: 162%;
+    top: 35%;
+    z-index: 1;
+}
+
+.tanggal{
+    font-size: 20px;
+    font-family: open;
+    color: #C92E3E;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    top: 40%;
+}
+
+.tanggal2{
+    font-size: 20px;
+    font-family: open;
+    color: #C92E3E;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    top: 40%;
+    left:83%
+}
+
+.garis{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #C92E3E;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.garistengah{
+    position: relative;
+}
+
+.lingkaran{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #fad0ba;
+    border: 2px solid #C92E3E;
+    border-radius: 16px;
+    z-index: 1;
+    top: 43%;
+    left: 37.6%;
+}
+
+.garispenghubung{
+    position: absolute;
+    height: 2px;
+    width: 83px;
+    background-color:#C92E3E;
+    top: 46.5%;
+    right:40%;
+
+}
+
+.garispenghubung2{
+    position: absolute;
+    height: 2px;
+    width: 71px;
+    background-color:#C92E3E;
+    top: 46.5%;
+    left:59%;
+    z-index: 1;
+}
+
+.navbar{
+    height: 50px;
+    background-color: #EAB293;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    z-index: 100;
+    font-family: lemon milk;
+  }
+.navbar div a{
+    text-decoration: none;
+    color: black;
+    z-index:100;
+}
+
+.HEADER{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.judul{
+    font-family: lemon milk;
+    font-size: 50px;
+    color: #45324f;
+}
+.deskripsi{
+    position: absolute;
+    left: 6%;
+    width: 220px;
+    top: 10%;
+}
+
+.deskripsi2{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 220px;
+}
+
+.gridcontent{
+    display: inline-grid; 
+    grid-template-columns: 1.4fr 0.6fr; 
+    grid-template-rows: 1fr; 
+    gap: 2px 2px; 
+    width: 100%;
+    height: 100%;
+}
+
+.gambar{
+    background-color: blue;
+    width: 30%;
+    height: 90%;
+    left: 55%;
+    top:5%;
+    position:absolute;
+    border: 2px solid red;
+    z-index: 12;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gambar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 60px;
+}
+
+.gambar2{
+    background-color: blue;
+    width: 30%;
+    height: 90%;
+    left: 15%;
+    top:5%;
+    position:absolute;
+    border: 2px solid red;
+    z-index: 12;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gambar2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 60px;
+}
+
+.deskripsi h1{
+    font-size: 20px;
+}
+
+.deskripsi2 h1{
+    font-size: 20px;
+}
+

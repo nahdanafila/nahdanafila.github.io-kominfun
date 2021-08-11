@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: lemon milk;
+    overflow-x: hidden;
+  }
+
+.page{
+    height: 100vh;
+    width: 100vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FAD0BA;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+.head1{
+  font: 700 4em/1 "LEMON MILK", sans-serif;
+  font-size: 100px;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+  background: url(isi\ text.png) repeat-x;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+/* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 60s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+}
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.par1{
+    font-size: 30px;
+    left: 50%;
+}
+
+.head2{
+  line-height: 70px;
+  overflow-y: hidden;
+}
+.grid{
+    height: 500px;
+    width: 1066px;
+    background-color: #FAD0BA;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 5px;
+    line-height: 475px;
+  }
+.kotak1 img{
+    height: 490px;
+    width: 207.2px;
+    object-fit: cover;
+    position: absolute;
+    transition: all .5s ease;
+}
+.kotak1 h2{
+    color: white;
+    opacity: 0;
+    z-index: 10;
+    transition: opacity .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40%;
+    line-height: 50px;
+}
+.kotak1:hover img{
+    filter: brightness(50%);
+    transform: scale(1.1);
+    z-index: 1;
+}
+.kotak1:hover h2{
+    opacity: 1;
+}
+.kotak1 h3{
+  color: white;
+  opacity: 0;
+  z-index: 10;
+  transition: opacity .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40%;
+  line-height: 50px;
+}
+.kotak1:hover h3{
+  opacity: 1;
+}
+
+.grid2{
+    height: 640px;
+    width: 1066px;
+    background-color:#FAD0BA;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1px;
+  }
+.circle {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    position: relative;
+
+  }
+.circle img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    position: absolute;
+    transition: all .5s ease;
+}
+.circle h2{
+  color: white;
+  opacity: 0;
+  z-index: 10;
+  transition: opacity .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+.circle a{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    position: absolute;
+    transition: all .5s ease;
+}
+.circle:hover img{
+  filter: brightness(50%);
+  transform:matrix(1.1);
+}
+.circle:hover h2{
+  opacity: 1;
+}
+.navbar{
+    height: 50px;
+    background-color: #EAB293;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    z-index: 100;
+  }
+.navbar div a{
+    text-decoration: none;
+    color: black;
+    z-index:100;
+}
+
+
+
+.cta html, body {
+  height: 100%;
+}
+
+.cta body {
+  display: grid;
+  font-family: Avenir, sans-serif;
+  color: #111;
+}
+
+.cta a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  overflow-y: hidden;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(255, 171, 157, 0.5);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 20px;
+  line-height: 90px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #ffab9d;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
